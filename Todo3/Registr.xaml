@@ -9,7 +9,7 @@
     <Grid>
         <Label Content="Welcome back" HorizontalAlignment="Left" Margin="463,10,0,0" VerticalAlignment="Top" FontSize="24"/>
         <Label Content="Имя пользователя" HorizontalAlignment="Left" Margin="463,66,0,0" VerticalAlignment="Top" FontSize="18" Grid.RowSpan="2"/>
-        <TextBox HorizontalAlignment="Left" Margin="463,99,0,0" TextWrapping="Wrap" Text="Введите имя пользователя" VerticalAlignment="Top" Width="162" BorderBrush="White" Foreground="#FF959090"/>
+        <TextBox x:Name="NameTextBox" HorizontalAlignment="Left" Margin="463,99,0,0" TextWrapping="Wrap" Text="Введите имя пользователя" VerticalAlignment="Top" Width="162" BorderBrush="White" Foreground="#FF959090"/>
         <Border BorderBrush="#FF959090" BorderThickness="1" Margin="463,124,65,308" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
                 <TransformGroup>
@@ -21,7 +21,7 @@
             </Border.RenderTransform>
         </Border>
         <Label Content="Ваша почта" HorizontalAlignment="Left" Margin="463,131,0,0" VerticalAlignment="Top" FontSize="18"/>
-        <TextBox HorizontalAlignment="Left" Margin="465,165,0,0" TextWrapping="Wrap" Text="exam@yandex.ru" VerticalAlignment="Top" Width="162" BorderBrush="White" Foreground="#FF959090" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="EmailTextBox" HorizontalAlignment="Left" Margin="465,165,0,0" TextWrapping="Wrap" Text="exam@yandex.ru" VerticalAlignment="Top" Width="162" BorderBrush="White" Foreground="#FF959090" TextChanged="TextBox_TextChanged"/>
         <Border BorderBrush="#FF959090" BorderThickness="1" Margin="463,186,65,246" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
                 <TransformGroup>
@@ -34,7 +34,7 @@
         </Border>
         <Label Content="Повторите пароль" HorizontalAlignment="Left" Margin="465,252,0,0" VerticalAlignment="Top" FontSize="18"/>
         <Label Content="Пароль" HorizontalAlignment="Left" Margin="465,193,0,0" VerticalAlignment="Top" FontSize="18"/>
-        <TextBox HorizontalAlignment="Left" Margin="465,227,0,0" TextWrapping="Wrap" Text="Введите пароль" VerticalAlignment="Top" Width="162" BorderBrush="White" Foreground="#FF959090"/>
+        <TextBox x:Name="PasswordBox1" HorizontalAlignment="Left" Margin="465,227,0,0" TextWrapping="Wrap" Text="Введите пароль" VerticalAlignment="Top" Width="162" BorderBrush="White" Foreground="#FF959090"/>
         <Border BorderBrush="#FF959090" BorderThickness="1" Margin="463,250,65,182" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
                 <TransformGroup>
@@ -45,7 +45,7 @@
                 </TransformGroup>
             </Border.RenderTransform>
         </Border>
-        <TextBox HorizontalAlignment="Left" Margin="465,276,0,0" TextWrapping="Wrap" Text="Повторите пароль" VerticalAlignment="Top" Width="162" BorderBrush="White" Foreground="#FF959090" TextChanged="TextBox_TextChanged_1"/>
+        <TextBox x:Name="PasswordBox2" HorizontalAlignment="Left" Margin="465,276,0,0" TextWrapping="Wrap" Text="Повторите пароль" VerticalAlignment="Top" Width="162" BorderBrush="White" Foreground="#FF959090" TextChanged="TextBox_TextChanged_1"/>
         <Border BorderBrush="#FF959090" BorderThickness="1" Margin="463,301,65,131" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
                 <TransformGroup>
@@ -56,14 +56,14 @@
                 </TransformGroup>
             </Border.RenderTransform>
         </Border>
-        <Button Content="Зарегистрироваться" HorizontalAlignment="Left" Margin="463,311,0,0" VerticalAlignment="Top" Background="#FFF96060" BorderBrush="#FFF96060" Foreground="White" Click="Button_Click" Height="37" Width="228" FontSize="16">
+        <Button x:Name="SubmitButton" Content="Зарегистрироваться" HorizontalAlignment="Left" Margin="463,311,0,0" VerticalAlignment="Top" Background="#FFF96060" BorderBrush="#FFF96060" Foreground="White" Click="Button_Click" Height="37" Width="228" FontSize="16">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="10 10 5 5"/>
                 </Style>
             </Button.Resources>
         </Button>
-        <Button Content="Назад" HorizontalAlignment="Left" Margin="463,367,0,0" VerticalAlignment="Top" Background="#FFF96060" BorderBrush="#FFF96060" Foreground="White" Height="34" Width="228" FontSize="16" Click="Button_Click_1">
+        <Button x:Name="CloseButton" Content="Назад" HorizontalAlignment="Left" Margin="463,367,0,0" VerticalAlignment="Top" Background="#FFF96060" BorderBrush="#FFF96060" Foreground="White" Height="34" Width="228" FontSize="16" Click="Button_Click_1">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="5 5 10 10"/>

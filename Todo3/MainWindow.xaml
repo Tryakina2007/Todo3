@@ -22,7 +22,7 @@
                 </TransformGroup>
             </Border.RenderTransform>
         </Border>
-        <TextBox HorizontalAlignment="Left" Margin="463,157,0,0" TextWrapping="Wrap" Text="Введите почту" VerticalAlignment="Top" Width="120" BorderBrush="White" Foreground="#FF959090"/>
+        <TextBox x:Name="email" HorizontalAlignment="Left" Margin="463,157,0,0" TextWrapping="Wrap" Text="Введите почту" VerticalAlignment="Top" Width="120" BorderBrush="White" Foreground="#FF959090"/>
         <Label Content="Пароль" HorizontalAlignment="Left" Margin="463,180,0,0" VerticalAlignment="Top" FontSize="18"/>
         <Border BorderBrush="#FF959090" BorderThickness="1" Margin="463,227,65,205" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
