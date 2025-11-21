@@ -34,9 +34,7 @@ namespace Todo3
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Main_empty mainW = new Main_empty();
-            mainW.Show();
-            this.Hide();
+
         }
     }
 }

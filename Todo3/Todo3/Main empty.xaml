@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Todo3"
         mc:Ignorable="d"
         Title="Main_empty" Height="450" Width="800">
-    <Grid x:Name="Main_Empty">
+    <Grid>
         <Image x:Name="avatarImage" Margin="0,0,689,325" Source="/Image2.png" Stretch="Fill"/>
         <Label Content="Добро пожаловать!" HorizontalAlignment="Left" Margin="211,67,0,0" VerticalAlignment="Top" FontSize="24"/>
         <Label Content="Создате свою первую &#xD;&#xA;задачу!" HorizontalAlignment="Left" Margin="211,114,0,0" VerticalAlignment="Top" FontSize="24"/>
