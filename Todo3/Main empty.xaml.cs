@@ -26,7 +26,9 @@ namespace Todo3
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            Main mainW = new Main();
+            mainW.Show();
+            this.Hide();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
