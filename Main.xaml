@@ -16,8 +16,8 @@
         <StackPanel Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Background="White" Margin="10">
             <TextBlock Text="Alex" FontSize="18" Margin="10"/>
             <TextBlock Text="Задачи" FontSize="14" Margin="10"/>
-            <TextBlock Text="История" FontSize="14" Margin="10"/>
-            <Button Content="+" Width="50" Height="50"/>
+            <Button Content="+" Width="50" Height="50" Click="Button_Click"/>
+            <Button Content="История" Height="24" Width="65" Click="Button_Click_2"/>
         </StackPanel>
 
         <!-- Верхняя панель -->
@@ -29,7 +29,7 @@
         </StackPanel>
 
         <!-- Основная область -->
-        <ListBox Grid.Column="1" Grid.Row="1" Margin="10">
+        <ListBox Grid.Column="1" Grid.Row="1" Margin="10" SelectionChanged="ListBox_SelectionChanged_1">
             <ListBoxItem>
                 <StackPanel Orientation="Horizontal">
                     <Ellipse Width="20" Height="20" Fill="Blue" Margin="5"/>

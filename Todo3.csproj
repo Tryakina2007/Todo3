@@ -59,6 +59,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DobavlenieZadach.xaml.cs">
+      <DependentUpon>DobavlenieZadach.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Istoria.xaml.cs">
+      <DependentUpon>Istoria.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Main empty.xaml.cs">
       <DependentUpon>Main empty.xaml</DependentUpon>
     </Compile>
@@ -69,6 +75,14 @@
       <DependentUpon>Registr.xaml</DependentUpon>
     </Compile>
     <Compile Include="Todo.Entities.cs" />
+    <Page Include="DobavlenieZadach.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Istoria.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Main empty.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

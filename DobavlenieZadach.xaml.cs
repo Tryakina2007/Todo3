@@ -15,43 +15,23 @@ using System.Windows.Shapes;
 namespace Todo3
 {
     /// <summary>
-    /// Логика взаимодействия для Main.xaml
+    /// Логика взаимодействия для DobavlenieZadach.xaml
     /// </summary>
-    public partial class Main : Window
+    public partial class DobavlenieZadach : Window
     {
-        public Main()
+        public DobavlenieZadach()
         {
             InitializeComponent();
         }
 
-
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
-        private void ListBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            DobavlenieZadach mainW = new DobavlenieZadach();
-            mainW.Show();
-            this.Hide();
+            MessageBox.Show("Событие создано!");
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            Istoria mainW = new Istoria();
-            mainW.Show();
-            this.Hide();
+            this.Close();
         }
     }
 }
