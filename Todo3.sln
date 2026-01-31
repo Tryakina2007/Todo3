@@ -5,6 +5,20 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo3", "Todo3\Todo3.csproj", "{04C43A7A-5A54-4F49-A26F-2E83F018731B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "View", "View", "{86AB9CB9-2372-40C6-8391-017FAE7BED80}"
+	ProjectSection(SolutionItems) = preProject
+		Todo3\DobavlenieZadach.xaml = Todo3\DobavlenieZadach.xaml
+		Todo3\DobavlenieZadach.xaml.cs = Todo3\DobavlenieZadach.xaml.cs
+		Todo3\Istoria.xaml = Todo3\Istoria.xaml
+		Todo3\Istoria.xaml.cs = Todo3\Istoria.xaml.cs
+		Todo3\Main empty.xaml = Todo3\Main empty.xaml
+		Todo3\Main empty.xaml.cs = Todo3\Main empty.xaml.cs
+		Todo3\Main.xaml = Todo3\Main.xaml
+		Todo3\Main.xaml.cs = Todo3\Main.xaml.cs
+		Todo3\Registr.xaml = Todo3\Registr.xaml
+		Todo3\Registr.xaml.cs = Todo3\Registr.xaml.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

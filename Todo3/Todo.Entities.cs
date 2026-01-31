@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Todo3
 {
-    internal class Todo
+    internal class Todo3
     {
     }
     public class UserModel
@@ -104,7 +104,7 @@ namespace Todo3
             }
             class Program
             {
-                static void ToDo(string[] args)
+                static void ToDo3(string[] args)
                 {
                     UserManager.RegisterUser("ivanov", "password123", "ivanov@mail.com");
                     UserManager.RegisterUser("petrov", "qwerty456", "petrov@mail.com");
