@@ -17,7 +17,7 @@ namespace Todo3
     /// <summary>
     /// Логика взаимодействия для DobavlenieZadach.xaml
     /// </summary>
-    public partial class DobavlenieZadach : Window
+    public partial class DobavlenieZadach : Page
     {
         public DobavlenieZadach()
         {
@@ -31,7 +31,10 @@ namespace Todo3
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            if (NavigationService != null)
+            {
+                NavigationService.GoBack();
+            }
         }
     }
 }

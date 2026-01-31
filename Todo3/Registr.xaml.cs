@@ -18,7 +18,7 @@ namespace Todo3
     /// <summary>
     /// Логика взаимодействия для Registr.xaml
     /// </summary>
-    public partial class Registr : Window
+    public partial class Registr : Page
     {
         public Registr()
         {
@@ -45,9 +45,7 @@ namespace Todo3
             if (ValidateEmail(email) && ValidatePassword(password) && ValidateName(name) && password == password1)
             {
                 MessageBox.Show("Регистрация успешно проведена!");
-                Main_empty MW = new Main_empty();
-                MW.Show();
-                this.Hide();
+                NavigationService.Navigate(new Main_empty());
             }
             else
             {
@@ -99,9 +97,7 @@ namespace Todo3
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            MainWindow regW = new MainWindow();
-            regW.Show();
-            this.Hide();
+            NavigationService.Navigate(new MainWindow());
         }
     }
 }

@@ -17,7 +17,7 @@ namespace Todo3
     /// <summary>
     /// Логика взаимодействия для Istoria.xaml
     /// </summary>
-    public partial class Istoria : Window
+    public partial class Istoria : Page
     {
         public Istoria()
         {

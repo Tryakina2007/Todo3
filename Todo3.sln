@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "View", "View", "{86AB9CB9-2
 		Todo3\Main empty.xaml.cs = Todo3\Main empty.xaml.cs
 		Todo3\Main.xaml = Todo3\Main.xaml
 		Todo3\Main.xaml.cs = Todo3\Main.xaml.cs
+		Todo3\MainWindow.xaml = Todo3\MainWindow.xaml
+		Todo3\MainWindow.xaml.cs = Todo3\MainWindow.xaml.cs
 		Todo3\Registr.xaml = Todo3\Registr.xaml
 		Todo3\Registr.xaml.cs = Todo3\Registr.xaml.cs
 	EndProjectSection

@@ -10,6 +10,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Todo3
@@ -17,7 +18,7 @@ namespace Todo3
     /// <summary>
     /// Логика взаимодействия для Main.xaml
     /// </summary>
-    public partial class Main : Window
+    public partial class Main : Page
     {
         public Main()
         {
@@ -37,9 +38,7 @@ namespace Todo3
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            DobavlenieZadach mainW = new DobavlenieZadach();
-            mainW.Show();
-            this.Hide();
+            NavigationService.Navigate(new DobavlenieZadach());
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -49,9 +48,7 @@ namespace Todo3
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Istoria mainW = new Istoria();
-            mainW.Show();
-            this.Hide();
+            NavigationService.Navigate(new Istoria());
         }
     }
 }

@@ -15,7 +15,7 @@ using System.Windows.Shapes;
 
 namespace Todo3
 {
-    public partial class MainWindow : Window
+    public partial class MainWindow : Page
     {
         public MainWindow()
         {
@@ -24,16 +24,12 @@ namespace Todo3
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Registr mainW = new Registr();
-            mainW.Show();
-            this.Hide();
+            NavigationService.Navigate(new Registr());
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Main_empty mainW = new Main_empty();
-            mainW.Show();
-            this.Hide();
+            NavigationService.Navigate(new Main_empty());
         }
     }
 }
